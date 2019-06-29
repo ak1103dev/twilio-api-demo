@@ -1,10 +1,13 @@
 import express from 'express'
+import cors from 'cors'
 import twilio from 'twilio'
 
 const app = express()
 
 const AccessToken = twilio.jwt.AccessToken
 const VideoGrant = AccessToken.VideoGrant
+
+app.use(cors())
 
 app.get('/', (req, res) => res.send('Hello, My API'))
 
