@@ -9,6 +9,7 @@
     "dev": "nodemon ."
   },
   "dependencies": {
+    "dotenv": "^8.0.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "twilio": "^3.33.0"
