@@ -1,3 +1,6 @@
 import app from '../app'
+import '../config'
 
-app.listen(8080, () => console.log('listening on 8080'))
+const port = process.env.API_PORT
+
+app.listen(port, () => console.log(`listening on ${port}`))
